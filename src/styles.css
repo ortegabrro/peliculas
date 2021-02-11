@@ -1,0 +1,37 @@
+html, body{
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.main{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main.center{
+    align-items: center;
+    justify-content: center;
+}
+
+.main-item{
+    align-self: stretch;
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+.breadcrumb.dark {
+    color: #777;
+    cursor: pointer;
+  }
+  
+  .breadcrumb.dark:before  {
+    color: #222;
+  }
+  
+  .breadcrumb.dark:last-child{
+    color: #111;
+    cursor: default;
+  }

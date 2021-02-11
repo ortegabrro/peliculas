@@ -1,0 +1,8 @@
+<ul class="collection nav-less" *ngFor="let m of menu">
+    <li class="collection-header grey darken-4 ">
+        <h6 class="thin">{{m.section}}</h6>
+    </li>
+    <a [routerLink]="item.route" routerLinkActive="amber" class="collection-item opc" *ngFor="let item of m.items">
+        <i class="material-icons">{{item.icon}}</i>{{item.title}}
+    </a>    
+</ul>

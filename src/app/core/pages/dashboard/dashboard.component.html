@@ -1,0 +1,14 @@
+<div class="dashboard">
+    <div class="dashboard-nav grey darken-4 hide-on-small-only z-depth-5">
+        <app-nav [menu]='nav.menu'></app-nav>
+    </div>
+    <div class="dashboard-content">
+        <app-toolbar></app-toolbar>
+        <div class="content-main">
+            <div class="container">
+                <router-outlet></router-outlet>
+            </div>
+
+        </div>
+    </div>
+</div>

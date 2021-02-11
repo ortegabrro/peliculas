@@ -1,0 +1,12 @@
+<nav>
+  <div class="nav-wrapper container">
+    <a  data-activates="mobile-nav" class="button-collapse hide-on-med-and-up">
+      <i class="material-icons">menu</i>
+    </a>
+    <span class="brand-logo">{{nav.title}}</span>
+
+  </div>
+  <div class="side-nav grey darken-4" id="mobile-nav">
+      <app-nav [menu]="nav.menu"></app-nav>
+  </div>
+</nav>

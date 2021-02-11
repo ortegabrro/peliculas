@@ -1,0 +1,31 @@
+<div class="main center login-background">
+
+  <div class="main-item">
+    <div class="row">
+      <div class="col s12 m4 offset-m4 l3 offset-l8 card login">
+        <div class="card-content white-text">
+          <span class="card-title">Inicio de Sesion</span>
+          <div class="input-field">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="usr" name="usr" type="text" required #usr [(ngModel)]="username">
+            <label for="usr">Usuario</label>
+          </div>
+
+          <div class="input-field">
+            <i class="material-icons prefix">lock</i>
+            <input type="password" name="pass" id="pass" required #pass [(ngModel)]="password" >
+            <label for="pass">Contraseña</label>
+          </div>
+
+          <div class="row" *ngIf="!loading">
+              <button class="col s6 btn-flat amber-text">Registrate</button>
+              <button class="col s6 btn " (click)="login()">Entrar</button>
+              <p class="red-text" *ngIf="error">{{error}}</p>
+          </div>
+          <app-loader [show]="loading" [size]="'small'"></app-loader>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
